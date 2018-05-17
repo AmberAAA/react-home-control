@@ -1,8 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDom from 'react-dom'
+import './index.scss'
+import WelCome from './WelCome'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+function App() {
+  return (
+    <div>
+      <WelCome name="amber"/>
+    </div>
+  )
+}
+
+ReactDom.render(App(),document.getElementById('root'))
+
